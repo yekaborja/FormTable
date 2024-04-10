@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+
+    <title>Formulario de registro - Mi web</title>
+</head>
+<body>
+    <header class="encabezado">
+        <nav class="barra contenedor">
+            <div class="barra__navegacion">
+                <a href="index.html" class="logo animacion">
+                    <h1>Form<span class="logo--texto animacion">'n</span>Table</h1>
+                </a>
+
+                <div class="menu">
+                    <a href="#" class="menu__enlace separacion animacion">Servicios</a>
+                    <a href="#" class="menu__enlace separacion animacion">Nosotros</a>
+                    <a href="#" class="menu__enlace separacion animacion">Precio</a>
+                    <a href="#" class="menu__enlace animacion"></a>
+                </div>
+            </div>
+            <!--Barra__navegación-->    
+
+            <div class="barra__usuario">
+                <div class="usuario">
+                    <a href="#" class="usuario__enlace separacion animacion">Ingresar</a>
+                    <a href="index.html" class="usuario__enlace barra__usuario--registro separacion animacion">Registrate</a>
+                </div>
+            </div>
+            <!--Barra__usuario-->
+        </nav>
+    </header>
+
+    <main class="principal contenedor">
+        <div class="contenido">
+            <section class="contenido__texto">
+                <h2 class="contenido__texto--titulo">Completa tu formulario de registro</h2>
+                <div class="contenido__texto--parrafo">
+                    <p>Llena los campos para realizarlo y así disfrutar de esta experiencia que tenemos para tí</p>
+                    <p>Para consultar el segundo punto de la actividad, haz clic en el boton "Ver tabla"</p>
+                </div>
+            </section>
+
+            <div class="contenido__enlace">
+                <a class="boton contenido--boton separacion animacion" href="#">Conocer más</a>
+                <a class="boton contenido--boton separacion animacion" href="tabla.html">Ver tabla</a>
+            </div>
+        </div>
+
+        <section class="registro">
+            <h3 class="registro__heading">Formulario de registro</h3>
+
+            <form action="" method="get">
+                <div class="registro__seccion">
+                    <label for="name" class="registro__titulo">Nombres:</label>
+                    <input type="text" id="name" class="registro__campo" placeholder="Digite sus nombres" maxlength="50">
+                </div>
+
+                <div class="registro__seccion">
+                    <label for="lastname" class="registro__titulo">Apellidos:</label>
+                    <input type="text" id="lastname" class="registro__campo" placeholder="Digite sus Apellidos" maxlength="50">
+                </div>
+
+                <div class="registro__seccion">
+                    <label for="email" class="registro__titulo">Correo:</label>
+                    <input type="text" id="email" class="registro__campo" placeholder="Digite su correo electrónico">
+                </div>
+
+                <div class="registro__seccion registro__seccion--genero">
+                    <label class="registro__titulo">Seleccione su genero:</label>
+                    <div class="registro__campo registro--genero">
+                        <p>Masculino: <input type="radio" value="M" name="gener"></p>
+                        <p>Femenino: <input type="radio" value="F" name="gener"></p>
+                    </div>
+                </div>
+
+                <div class="registro__seccion registro__seccion--news">
+                    <label for="news" class="registro__titulo">Deseo recibir información sobre novedades y ofertas</label>
+                    <input type="checkbox" id="news" class="registro__campo registro__campo--checkbox" checked>
+                </div>
+
+                <div class="registro__seccion">
+                    <label for="T&C" class="registro__titulo">Declaro haber leido y aceptar las condiciones generales del programa y la normativa sobre protección de datos</label>
+                    <input type="checkbox" id="T&C" class="registro__campo registro__campo--checkbox">
+                </div>
+
+                <input class="boton registro--boton animacion" type="submit" value="Terminar registro">
+            </form>
+        </section>
+    </main>
+</body>
+</html>
